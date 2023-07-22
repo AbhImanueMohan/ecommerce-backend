@@ -1,0 +1,41 @@
+mongoose : used to connect backend with node
+cors : used for the connection between two ports
+dotenv : is a environment used while we are adding the product in the cart and to retrive the data from the backend
+express: backend framework
+
+    
+    
+    
+    
+    
+                                      BACKEND FOR E_CART
+                            -------------------------------------
+
+            1, Create a folder for BACKEND
+
+            2, Create a package.json file (npm init -y)
+
+            3, Install express mongoose cors dotenv (npm i express mongoose cors dotenv)
+
+            4, Create index.js, .env, .gitignore
+
+            5, Inside init,
+                     -> To automatically load .env file into our application
+                     -> Import express, cors, dotenv
+                     -> Create a server application
+                     -> Use cors(),  express.json in server application
+                     -> Define  port number in server application
+                
+            6, MONGODB ATLAS CONFIGURATION
+                     -> Create a Database and collection in ATLAS
+                     -> Copy connection string in to the  .env file
+                     -> Create a folder DB , Inside in it create a connection.js
+                     -> In connection.js, 
+                              - Import  mongoose
+                              - Get db connection string from .env file
+                              - Use mongoose.connect for conencting MONGODB ATLAS and  NODEJS
+
+                    -> Import connection.js in index.js   
+
+            7, Create a model schema to store products details and export the model
+                    -> productSchema.js
